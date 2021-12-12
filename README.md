@@ -44,3 +44,16 @@ dd.to_dict(orient="records")
 args={name:name},json
 
 data should be sent in the same format as in '/train'
+
+
+**/results**
+
+args={"task_id":task_id}
+
+returns results or state of the task
+
+**Dockerhub**
+https://hub.docker.com/repository/docker/spielmeister/advancedpythonhw2api API
+https://hub.docker.com/repository/docker/spielmeister/advancedpythonhw2worker Worker
+
+In HW2 added MongoDB for model storage, celery tasks and docker. App can be build with docker-compose, 4 containers are created(Mongo,app,worker,redis)
